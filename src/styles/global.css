@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Cabin';
+    src: url(/fonts/Cabin/static/Cabin-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url(/fonts/Lato/Lato-Regular.ttf);
+}

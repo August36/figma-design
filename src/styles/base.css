@@ -5,7 +5,7 @@
     --heading-weight: 600;
     --heading-line-height: 1.3rem;
     --heading-color: #1C1C1C;
-    --heading-font: Cabin;
+    --heading-font: 'Cabin';
 
     --heading-size1: 3.125rem;
     --heading-size2: 2.8125rem;
@@ -15,9 +15,17 @@
     --heading-size6: 1.5625rem;
     --heading-size7: 1.25rem;
 
+    /* uncategorized */
+
+    --white-text: #fff;
+
+    --gap1: 0.625rem;
+
+    --alt-text-color:#353535;
+
     /* paragraphs */
     --p-color: #595566;
-    --p-font: Lato;
+    --p-font: 'Lato';
     --p-size: 1rem;
     --p-style: normal;
     --p-weight: 400;
