@@ -1,0 +1,9 @@
+.hero_img_page1{
+    grid-column: full;
+    transform: scaleX(-1);
+}
+
+.businessGrowthCard{
+    grid-column: full;
+    grid-row: 3 / 4;
+}

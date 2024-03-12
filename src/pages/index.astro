@@ -2,8 +2,11 @@
 import "../styles/global.css"
 import "../styles/base.css"
 import "../styles/reset.css"
+import "../styles/general.css"
 
-import Nav from "../components/Nav.astro";
+import Nav from "../components/Nav.astro"
+import Button from "../components/Button.astro"
+import BusinessGrowthCard from "../components/BusinessGrowthCard.astro"
 ---
 
 <html lang="en">
@@ -17,7 +20,12 @@ import Nav from "../components/Nav.astro";
 	<body>
 		<header>
 			<Nav></Nav>
-
 		</header>
+		<main>
+			<article>
+				<img class="hero_img_page1" src="/imgs/ce65bc598ffea1fa523885cb66ce578d-min.webp" alt="Hero image">
+				<BusinessGrowthCard></BusinessGrowthCard>
+			</article>
+		</main>
 	</body>
 </html>

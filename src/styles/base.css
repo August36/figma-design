@@ -32,7 +32,9 @@
     --p-line-height: 1.5rem;
 
     /* margin mellem forskellige elementer. Brug med "margin-block-start" */
-    --flow-space: 0.5rlh;
+    --flow-space-small: 0.25rlh;
+    --flow-space-medium: 0.5rlh;
+    --flow-space-large: 0.75rlh;
 }
 
 /* centered screen grid with breakout, full-bleed and so etc. */
@@ -53,5 +55,10 @@ article{
     var(--feature) [feature-end]
     var(--full) [full-end];
 
+    grid-template-rows: repeat(10, 1fr);
 }
+
+article > * {
+    grid-column: content;
+} 
 
