@@ -8,3 +8,11 @@
     grid-column: full;
     grid-row: 3 / 4;
 }
+
+.client_banner{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row: 2 / 3;
+    grid-column: feature;
+    color: #030211;
+}
