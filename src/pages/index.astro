@@ -7,6 +7,7 @@ import "../styles/general.css"
 import Nav from "../components/Nav.astro"
 import Button from "../components/Button.astro"
 import BusinessGrowthCard from "../components/BusinessGrowthCard.astro"
+import SectionTitle from "../components/SectionTitle.astro"
 ---
 
 <html lang="en">
@@ -24,7 +25,6 @@ import BusinessGrowthCard from "../components/BusinessGrowthCard.astro"
 		<main>
 			<article>
 				<img class="hero_img_page1" src="/imgs/ce65bc598ffea1fa523885cb66ce578d-min.webp" alt="Hero image">
-				<BusinessGrowthCard></BusinessGrowthCard>
 				<section class="client_banner">
 					<!-- Her laver jeg en sløv løsning og tager screenshots af alle de forskellige clienter. Det virker for tidskrævende at skulle finde samtlige fonte osv. -->
 					<div>
@@ -45,6 +45,11 @@ import BusinessGrowthCard from "../components/BusinessGrowthCard.astro"
 					<div>
 						<img src="/imgs/fortune.png" alt="Client logo">
 					</div>
+				</section>
+				<BusinessGrowthCard></BusinessGrowthCard>
+				<section class="aboutUsCard">
+					<SectionTitle text="ABOUT US" color="yellow"></SectionTitle>
+					<SectionTitle text="ABOUT US" color="green"></SectionTitle>
 				</section>
 			</article>
 		</main>

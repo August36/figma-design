@@ -6,14 +6,12 @@
 
 .businessGrowthCard{
     grid-column: full;
-    grid-row: 6 / 9;
 }
 
 .client_banner{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows:repeat(2, 5rem);
-    grid-row: 4 / 6;
     grid-column: feature;
     color: #030211;
     align-items: center;
