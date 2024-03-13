@@ -1,0 +1,47 @@
+---
+import SectionTitle from "../components/SectionTitle.astro"
+---
+
+<section>
+    <div>
+        <SectionTitle text="ABOUT US" color="yellow"></SectionTitle>
+        <h2>About our Consuting Agency Team</h2>
+        <p class="p_large">We create experiences and build products that make business grow</p>
+        <p class="p_small">Get help from Alex Moore, a professional business coach with advanced experience on growth and business scaling.</p>
+        <div class="border_container">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</section>
+
+<style>
+    section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2{
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+    font-style: var(--heading-style);
+    line-height: var(--p-line-height);
+    font-weight: var(--heading-weight);
+    margin-bottom: 1rem;
+}
+
+.p_large{
+    color: var(--heading-color);
+    font-size: var(--heading-size7);
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+}
+
+.border_container{
+    border-top: 1px solid #D8D8D8;
+    border-bottom: 1px solid #D8D8D8;
+    border-left: none;
+    border-right: none;
+}
+</style>

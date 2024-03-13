@@ -8,6 +8,7 @@ import Nav from "../components/Nav.astro"
 import Button from "../components/Button.astro"
 import BusinessGrowthCard from "../components/BusinessGrowthCard.astro"
 import SectionTitle from "../components/SectionTitle.astro"
+import AboutCard from "../components/AboutCard.astro"
 ---
 
 <html lang="en">
@@ -28,29 +29,26 @@ import SectionTitle from "../components/SectionTitle.astro"
 				<section class="client_banner">
 					<!-- Her laver jeg en sløv løsning og tager screenshots af alle de forskellige clienter. Det virker for tidskrævende at skulle finde samtlige fonte osv. -->
 					<div>
-						<img src="/imgs/studio_green/studio_green.png" alt="Client logo">
+						<img src="/imgs/client_logos/studio_green/studio_green.png" alt="Client logo">
 					</div>
 					<div>
-						<img src="/imgs/norto.png" alt="Client logo">
+						<img src="/imgs/client_logos/norto.png" alt="Client logo">
 					</div>
 					<div>
-						<img src="/imgs/points_one.png" alt="Client logo">
+						<img src="/imgs/client_logos/points_one.png" alt="Client logo">
 					</div>
 					<div>
-						<img src="/imgs/out_of_the_sandbox.png" alt="Client logo">
+						<img src="/imgs/client_logos/out_of_the_sandbox.png" alt="Client logo">
 					</div>
 					<div>
-						<img src="/imgs/brand.png" alt="Client logo">
+						<img src="/imgs/client_logos/brand.png" alt="Client logo">
 					</div>
 					<div>
-						<img src="/imgs/fortune.png" alt="Client logo">
+						<img src="/imgs/client_logos/fortune.png" alt="Client logo">
 					</div>
 				</section>
 				<BusinessGrowthCard></BusinessGrowthCard>
-				<section class="aboutUsCard">
-					<SectionTitle text="ABOUT US" color="yellow"></SectionTitle>
-					<SectionTitle text="ABOUT US" color="green"></SectionTitle>
-				</section>
+				<AboutCard></AboutCard>
 			</article>
 		</main>
 	</body>

@@ -1,11 +1,24 @@
+p{
+    color: var(--p-color);
+    font-family: var(--p-font);
+    font-size: var(--p-size);
+    font-style: var(--p-style);
+    font-weight: var(--p-weight);
+    line-height: var(--p-line-height);
+}
+
+/* h2{
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+    font-style: var(--heading-style);
+    line-height: var(--p-line-height);
+    font-weight: var(--heading-weight);
+} */
+
 .hero_img_page1{
     grid-column: full;
     transform: scaleX(-1);
     z-index: -1;
-}
-
-.businessGrowthCard{
-    grid-column: full;
 }
 
 .client_banner{
@@ -18,4 +31,9 @@
     text-align: center;
     column-gap: 2rem;
     padding: 0.5rem;
+}
+
+.businessGrowthCard{
+    grid-column: content;
+    margin-bottom:var(--flow-space-large);
 }
