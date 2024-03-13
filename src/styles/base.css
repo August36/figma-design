@@ -55,7 +55,8 @@ article{
     var(--feature) [feature-end]
     var(--full) [full-end];
 
-    grid-template-rows: repeat(10, 1fr);
+    /* grid-template-rows: repeat(10, 5rem);
+    row-gap: 1rem; */
 }
 
 article > * {

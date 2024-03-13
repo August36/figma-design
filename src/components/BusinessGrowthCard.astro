@@ -21,7 +21,7 @@ import Button from "./Button.astro"
         gap: 0.625rem;
 
         border-radius: 1.8125rem;
-        background: rgba(255, 255, 255, 0.85);
+        background-color: #F5F5F5;
         backdrop-filter: blur(5.5px);
 
         container: businessGrowthCard / inline-size;
@@ -34,7 +34,6 @@ import Button from "./Button.astro"
         font-style: var(--heading-style);
         font-weight: 700;
         line-height: 1.625rem;
-        align-self: center;
     }
 
     p{
@@ -55,10 +54,14 @@ import Button from "./Button.astro"
         margin-block-start: var(--flow-space-large);
         align-self: center;
     }
-
-    /* @container businessGrowthCard (min-width: 300px;) {
+    @container businessGrowthCard (min-width: 500px) {
+    .businessGrowthCard p {
+        /* margin-left: 2rem; */
+    }
+}
+/* 
         
-        STYLE TILPASSET DESKTOP/FIGMA DESIGNET
+        /* STYLE TILPASSET DESKTOP/FIGMA DESIGNET
         .businessGrowthCard{
         display: flex;
         width: 34.344663rem;
@@ -99,7 +102,5 @@ import Button from "./Button.astro"
         align-items: center;
         gap: 1rem;
         margin-block-start: var(--flow-space-large);
-    }
-
     } */
 </style>
