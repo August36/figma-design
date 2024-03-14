@@ -44,3 +44,22 @@ h2{
     grid-column: content;
     margin-bottom:var(--flow-space-large);
 }
+
+@media only screen and (min-width: 781px) {
+    .client_banner{
+        display: flex;
+        justify-content: space-evenly;
+        grid-column: full;
+    }
+
+    .business_about_combiner{
+        display: flex;
+        width: 34.344663rem;
+        padding: 3.4375rem 3.625rem;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        grid-column: content;
+        gap: 5rem;
+    }
+    }

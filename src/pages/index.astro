@@ -26,7 +26,10 @@ import Process from "../components/Process.astro"
 		</header>
 		<main>
 			<article>
-				<img class="hero_img_page1" src="/imgs/ce65bc598ffea1fa523885cb66ce578d-min.webp" alt="Hero image">
+				<!-- put img_container background to the img and fix size problem with padding -->
+				<!-- <div class="hero_img_container"> -->
+					<img class="hero_img_page1" src="/imgs/ce65bc598ffea1fa523885cb66ce578d-min.webp" alt="Hero image">
+				<!-- </div> -->
 				<section class="client_banner">
 					<div>
 						<img src="/imgs/client_logos/studio_green/studio_green.png" alt="Client logo">
@@ -48,8 +51,10 @@ import Process from "../components/Process.astro"
 					</div>
 				</section>
 				<BusinessGrowthCard></BusinessGrowthCard>
-				<AboutCard></AboutCard>
-				<MarketExperience></MarketExperience>
+				<div class="business_about_combiner">
+					<AboutCard></AboutCard>
+					<MarketExperience></MarketExperience>
+				</div>
 				<Services></Services>
 				<Process></Process>
 			</article>

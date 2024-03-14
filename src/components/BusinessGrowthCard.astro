@@ -17,14 +17,14 @@ import Button from "./Button.astro"
         width: 100%;
         padding: 1.4375rem 1.3rem;
         flex-direction: column;
-        align-items: flex-start;
         gap: 0.625rem;
+        grid-column: feature;
 
         border-radius: 1.8125rem;
         background-color: #F5F5F5;
         backdrop-filter: blur(5.5px);
 
-        container: businessGrowthCard / inline-size;
+        /* container: businessGrowthCard / inline-size; */
     }
 
     h2{
@@ -54,11 +54,18 @@ import Button from "./Button.astro"
         margin-block-start: var(--flow-space-large);
         align-self: center;
     }
-    @container businessGrowthCard (min-width: 500px) {
-    .businessGrowthCard p {
+
+
+
+    @media only screen and (min-width: 781px) {
+
+  }
+
+    /* @container businessGrowthCard (min-width: 500px) {
+    .businessGrowthCard p { */
         /* margin-left: 2rem; */
-    }
-}
+    /* }
+} */
 /* 
         
         /* STYLE TILPASSET DESKTOP/FIGMA DESIGNET
