@@ -45,7 +45,7 @@ h2{
     margin-bottom:var(--flow-space-large);
 }
 
-@media only screen and (min-width: 781px) {
+@media only screen and (min-width: 1200px) {
     .client_banner{
         display: flex;
         justify-content: space-evenly;

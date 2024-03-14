@@ -4,7 +4,9 @@ import ServiceBox from "../components/ServiceBox.astro";
 ---
 
 <div>
-    <SectionTitle text="SERVICES" color="green"></SectionTitle>    
+    <div class="title_container">
+        <SectionTitle text="SERVICES" color="green"></SectionTitle>   
+    </div> 
     <h2>Get Control Over Your Business I take your finance to the next level</h2>
     <div class="service_grid">
         <ServiceBox h3="Audit & Evaluation" text="Get help from Alex Moore, a professional business coach with advanced experience on growth and business scaling.">
@@ -110,7 +112,10 @@ import ServiceBox from "../components/ServiceBox.astro";
         display: flex;
         flex-direction: column;
         justify-content: center;
+        grid-column: content;
         gap: 1rem;
+        background-color: #F5F5F5;
+        align-self: center;
     }
 
     h2 {
@@ -128,5 +133,37 @@ import ServiceBox from "../components/ServiceBox.astro";
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         margin-bottom: 1.5rem;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        .service_grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin-bottom: 1.5rem;
+        align-items: center;
+    }
+
+    h2 {
+        font-size: var(--heading-size4);
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        grid-column: full;
+        gap: 1rem;
+        background-color: #F5F5F5;
+        align-self: center;
+        width: 100%;
+        padding: 1rem 10rem;
+    }
+
+    .title_container{
+        display: flex;
+        align-items: center;
+    }
+    
     }
 </style>
