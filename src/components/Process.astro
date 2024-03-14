@@ -5,7 +5,7 @@ import ServiceBox from "./ServiceBox.astro";
 ---
 
 <section class="process_section">
-    <div>
+    <div class="left_div">
         <SectionTitle text="PROCESS" color="green"></SectionTitle>
         <h2>There have some easy steps to join with us!</h2>
         <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
@@ -27,7 +27,7 @@ import ServiceBox from "./ServiceBox.astro";
             </ProcessItem>
         </div>
     </div>
-    <div>
+    <div class="right_div">
         <SectionTitle text="GROWING WITH OUR CLIENTS" color="yellow"></SectionTitle>
         <h2>30 Years of Experience</h2>
         <p class="p_margin">Capitalize on low hanging fruit to identify a ballpark value added activity beta test. Override the digital divide with additional from DevOps.</p>
@@ -98,5 +98,17 @@ import ServiceBox from "./ServiceBox.astro";
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        .process_section {
+        flex-direction: row;
+        grid-column: full;
+        padding: 2rem 2rem;
+        gap: 2rem;
+        max-width: 1445px;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
     }
 </style>
