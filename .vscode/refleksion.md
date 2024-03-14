@@ -20,4 +20,4 @@ Men kunne ikke få hul igennem. Jeg prøvede også andre måder, som jeg fandt v
 
 Jeg er tilfreds med mobilversionen af mit projekt, men i større formater fungerer det ikke så godt. Jeg var i tidsnød, så jeg endte med kun at tilføje en media query ved 1200px, da mit design fungerede bedst i denne størrelse.
 
-At arbejde med denne opgave har gjort mig mere tilpas med mange af de ting, som vi er blevet introduceret for på dette tema, som brugerdefinerede variabler og centrerede grid layouts.
+At arbejde med denne opgave har gjort mig mere tilpas med mange af de ting, som vi er blevet introduceret for på dette tema, som costum properties og centrerede grid layouts.
