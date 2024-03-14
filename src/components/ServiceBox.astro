@@ -1,0 +1,46 @@
+---
+const text = Astro.props.text;
+const h3 = Astro.props.h3;
+const color = Astro.props.color;
+---
+<div class={`servicebox-${color}`}>
+    <slot></slot>
+    <h3>{h3}</h3>
+    <p>{text}</p>
+</div>
+
+<style>
+    div {
+        display: flex;
+        width: 12.18769rem;
+        padding: 0.8rem 0.8rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.625rem;
+        flex-shrink: 0;
+        border-radius: 1.25rem;
+        background: #EBEBEB;
+    }
+
+    .servicebox-dark{
+        background-color: #181818;
+        color: #FFF;
+    }
+
+    .servicebox-dark h3 {
+        color: #FFF;
+    }
+
+    .servicebox-dark p {
+        color: #FFF;
+    }
+
+    h3 {
+        color: var(--heading-color);
+        font-family: var(--heading-font);
+        font-size: var(--heading-size7);
+        font-style: var(--heading-style);
+        font-weight: 700;
+        line-height: 116%;
+    }
+</style>
