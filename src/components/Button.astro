@@ -1,64 +1,63 @@
 ---
 const text = Astro.props.text;
-const color = Astro.props.color || 'black';
+const color = Astro.props.color || "black";
 ---
 
 <button class={`button-${color}`}>
-    <p>{text}</p>
+  <p>{text}</p>
 </button>
 
 <style>
-    button{
-        display: flex;
-        padding: 1rem 1.8rem;
-        align-items: flex-start;
-        gap: 0.625rem;
-        border-radius: 2.625rem;
-        white-space: nowrap;
-    }
+  button {
+    display: flex;
+    padding: 1rem 1.8rem;
+    align-items: flex-start;
+    gap: 0.625rem;
+    border-radius: 2.625rem;
+    white-space: nowrap;
+  }
 
-    .button-black {
-        background-color: #181818;
-        border: 2px solid #181818;
-    }
+  .button-black {
+    background-color: #181818;
+    border: 2px solid #181818;
+  }
 
-    .button-yellow {
-        background-color: #FFCC4A;
-        border: 2px solid #FFCC4A;
-    }
-    .button-black p{
-        color: var(--white-text);
-        font-family: var(--p-font);
-        font-size: var(--p-size);
-        font-style: var(--p-style);
-        font-weight: 500;
-    }
+  .button-yellow {
+    background-color: #ffcc4a;
+    border: 2px solid #ffcc4a;
+  }
+  .button-black p {
+    color: var(--white-text);
+    font-family: var(--p-font);
+    font-size: var(--p-size);
+    font-style: var(--p-style);
+    font-weight: 500;
+  }
 
-    .button-yellow p{
-        color: #181818;
-        font-family: var(--p-font);
-        font-size: var(--p-size);
-        font-style: var(--p-style);
-        font-weight: 500;
-    }
+  .button-yellow p {
+    color: #181818;
+    font-family: var(--p-font);
+    font-size: var(--p-size);
+    font-style: var(--p-style);
+    font-weight: 500;
+  }
 
-    .button-black:hover {
-        border: 2px solid #181818;
-        background: #FFF;
-    }
+  .button-black:hover {
+    border: 2px solid #181818;
+    background: #fff;
+  }
 
-    .button-black:hover p {
-        background: #FFF;
-        color: #181818;
-    }
+  .button-black:hover p {
+    background: #fff;
+    color: #181818;
+  }
 
-    .button-yellow:hover {
-        border: 2px solid #181818;
-        background: #181818;
-    }
+  .button-yellow:hover {
+    border: 2px solid #181818;
+    background: #181818;
+  }
 
-    .button-yellow:hover p {
-        color: #fff;
-    }
-
+  .button-yellow:hover p {
+    color: #fff;
+  }
 </style>

@@ -4,51 +4,50 @@ const color = Astro.props.color;
 ---
 
 <h1 class={`h1-${color}`}>
-    <p>{text}</p>
+  <p>{text}</p>
 </h1>
 
 <style>
-    h1{
+  h1 {
     display: inline-block;
-    padding: 0rem 0.75rem;  
+    padding: 0rem 0.75rem;
     gap: 0.625rem;
-    background-color: #FFCC4A;
+    background-color: #ffcc4a;
     border-radius: 2.625rem;
     text-align: center;
     margin-bottom: 1.38rem;
     font-family: Lato;
-    }
+  }
 
+  .h1-yellow {
+    background-color: #ffcc4a;
+    border: 2px solid #ffcc4a;
+  }
 
-    .h1-yellow {
-        background-color: #FFCC4A;
-        border: 2px solid #FFCC4A;
-    }
+  .h1-green {
+    background-color: #4eaf4e;
+    border: 2px solid #4eaf4e;
+  }
 
-    .h1-green {
-        background-color: #4EAF4E;
-        border: 2px solid #4EAF4E;;
-    }
+  .h1-yellow p {
+    color: var(--alt-text-color2);
+    font-family: var(--p-font);
+    font-size: var(--p-size);
+    font-style: var(--p-style);
+    font-weight: 500;
+  }
 
-    .h1-yellow p{
-        color: var(--alt-text-color2);
-        font-family: var(--p-font);
-        font-size: var(--p-size);
-        font-style: var(--p-style);
-        font-weight: 500;
-    }
+  .h1-green p {
+    color: var(--white-text);
+    font-family: var(--alt);
+    font-size: var(--p-size);
+    font-style: var(--p-style);
+    font-weight: 500;
+  }
 
-    .h1-green p{
-        color: var(--white-text);
-        font-family: var(--alt);
-        font-size: var(--p-size);
-        font-style: var(--p-style);
-        font-weight: 500;
+  @media only screen and (min-width: 1200px) {
+    h1 {
+      max-width: fit-content;
     }
-
-    @media only screen and (min-width: 1200px) {
-        h1{
-            max-width: fit-content;
-        }
-    }
+  }
 </style>

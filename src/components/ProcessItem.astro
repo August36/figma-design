@@ -4,25 +4,25 @@ const text = Astro.props.text;
 ---
 
 <div class="process_item">
-    <slot></slot>
-    <div>
-        <h3>{h3}</h3>
-        <p>{text}</p>
-    </div>
+  <slot />
+  <div>
+    <h3>{h3}</h3>
+    <p>{text}</p>
+  </div>
 </div>
 
 <style>
-    .process_item {
-    border-top: 1px solid #C1C1C1;
+  .process_item {
+    border-top: 1px solid #c1c1c1;
     display: flex;
     justify-content: flex-start;
     gap: 1rem;
     padding-top: 1rem;
-    }
+  }
 
-    @media only screen and (min-width: 1200px) {
-        .process_item {
-            padding: 2rem;
-        }
+  @media only screen and (min-width: 1200px) {
+    .process_item {
+      padding: 2rem;
     }
+  }
 </style>
