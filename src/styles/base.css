@@ -33,9 +33,10 @@
     --p-line-height: 1.5rem;
 
     /* margin mellem forskellige elementer. Brug med "margin-block-start" */
-    --flow-space-small: 0.25rlh;
-    --flow-space-medium: 0.5rlh;
-    --flow-space-large: 0.75rlh;
+    --flow-space-small: 0.5rem;
+    --flow-space-medium: 1rem;
+    --flow-space-large: 1.5rem;
+    --flow-space-large: 2rem;
 }
 
 /* centered screen grid with breakout, full-bleed and so etc. */
