@@ -1,0 +1,22 @@
+---
+const h3 = Astro.props.h3;
+const text = Astro.props.text;
+---
+
+<div class="process_item">
+    <slot></slot>
+    <div>
+        <h3>{h3}</h3>
+        <p>{text}</p>
+    </div>
+</div>
+
+<style>
+    .process_item {
+    border-top: 1px solid #C1C1C1;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding-top: 1rem;
+    }
+</style>

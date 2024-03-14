@@ -7,13 +7,20 @@ p{
     line-height: var(--p-line-height);
 }
 
-/* h2{
+h3{
     color: var(--heading-color);
     font-family: var(--heading-font);
     font-style: var(--heading-style);
     line-height: var(--p-line-height);
     font-weight: var(--heading-weight);
-} */
+}
+h2{
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+    font-style: var(--heading-style);
+    line-height: var(--p-line-height);
+    font-weight: var(--heading-weight);
+}
 
 .hero_img_page1{
     grid-column: full;

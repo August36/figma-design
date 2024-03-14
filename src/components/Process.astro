@@ -1,0 +1,55 @@
+---
+import SectionTitle from "../components/SectionTitle.astro";
+import ProcessItem from "./ProcessItem.astro";
+---
+
+<section class="process_section">
+    <div>
+        <SectionTitle text="PROCESS" color="green"></SectionTitle>
+        <h2>There have some easy steps to join with us!</h2>
+        <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+        <div class="process_flex">
+            <ProcessItem h3="Setup Account" text="We understand the importance of approaching each work integrally.">
+                <svg xmlns="http://www.w3.org/2000/svg" width="53" height="53" viewBox="0 0 53 53" fill="none">
+                    <circle cx="26.1658" cy="26.1658" r="26.1658" fill="#FFCC4A"/>
+                  </svg> 
+            </ProcessItem>
+            <ProcessItem h3="Consult with us" text="Increase social reach and productivity with our App Directory, a collection.">
+                <svg xmlns="http://www.w3.org/2000/svg" width="53" height="53" viewBox="0 0 53 53" fill="none">
+                    <circle cx="26.1658" cy="26.3798" r="26.1658" fill="#4EAF4E"/>
+                  </svg>
+            </ProcessItem> 
+            <ProcessItem h3="Payment & Boost" text="We encourage every team member to be a whole person. We have a flexible.">
+                <svg xmlns="http://www.w3.org/2000/svg" width="53" height="53" viewBox="0 0 53 53" fill="none">
+                <circle cx="26.1658" cy="26.3798" r="26.1658" fill="#181818"/>
+              </svg>
+            </ProcessItem>
+        </div>
+    </div>
+    <div>
+        <SectionTitle text="GROWING WITH OUR CLIENTS" color="yellow"></SectionTitle>
+    </div>
+</section>
+
+<style>
+    div{
+        display: flex;
+        flex-direction: column;
+    }
+    .process_section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .process_flex{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    h2{
+        margin-bottom: 1rem;
+    }
+</style>
